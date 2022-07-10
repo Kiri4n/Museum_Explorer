@@ -1,6 +1,8 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const init = require("./init");
 
+init.initDB();
 
 const createWindow = () => {
     const mainWindow = new BrowserWindow({
